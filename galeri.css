@@ -1,0 +1,241 @@
+/* Navbar ve Temel Ayarları buraya da kopyalıyoruz (veya index.css'den çekebiliriz ama ayrı dosya istediğin için buraya ekliyorum) */
+* { margin: 0; padding: 0; box-sizing: border-box; font-family: sans-serif; }
+body { background-color: #f9f9f9; }
+:root { --gold: #D4AF37; --dark: #222; --light: #fff; }
+
+/* Navbar Stilleri (Index.css ile aynı olmalı) */
+.navbar { background-color: var(--dark); display: flex; justify-content: space-between; align-items: center; padding: 1rem 5%; border-bottom: 2px solid var(--gold); }
+.logo h2 { color: var(--gold); }
+.nav-links { list-style: none; display: flex; }
+.nav-links li { margin-left: 20px; }
+.nav-links a { text-decoration: none; color: var(--light); transition: 0.3s; }
+.nav-links a:hover, .nav-links a.active { color: var(--gold); }
+
+/* GALERİ ÖZEL STİLLERİ */
+.gallery-container {
+    padding: 50px 5%;
+    text-align: center;
+}
+
+.gallery-container h1 {
+    color: var(--dark);
+    margin-bottom: 10px;
+}
+
+.subtitle {
+    color: #666;
+    margin-bottom: 40px;
+}
+
+/* eski masonry düzen; yeni tasarımda kullanılmayabilir ancak elimizde bırakıyoruz */
+.masonry-grid {
+    column-count: 3; /* Yan yana 3 sütun */
+    column-gap: 20px;
+}
+
+/* tab bar headrine göre iki kategori gösterilecek */
+.tabs {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-bottom: 30px;
+}
+.tab {
+    cursor: pointer;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    color: var(--dark);
+    border-bottom: 3px solid transparent;
+    transition: border-color 0.3s, color 0.3s;
+}
+.tab.active {
+    color: var(--gold);
+    border-color: var(--gold);
+}
+
+
+.gallery-item {
+    margin-bottom: 20px;
+    break-inside: avoid; /* Resimlerin ortadan bölünmesini engeller */
+}
+
+.gallery-item img {
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+    display: block;
+}
+
+.gallery-item img:hover {
+    transform: scale(1.02);
+    box-shadow: 0 8px 16px rgba(212, 175, 55, 0.4); /* Altın gölge */
+}
+
+/* Mobil Uyumluluk */
+@media (max-width: 768px) {
+    .masonry-grid {
+        column-count: 2;
+    }
+    /* tabs için ekstra mobil ayar gerekmez */
+}
+@media (max-width: 480px) {
+    .masonry-grid {
+        column-count: 1;
+    }
+    .nav-links { display: none; } /* Mobilde menü gizleme (basit tutuldu) */
+}
+
+footer { background-color: var(--dark); color: var(--light); margin-top: 80px; padding: 50px 5%; }
+
+.footer-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-section h3 {
+    color: var(--gold);
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+.footer-section ul {
+    list-style: none;
+}
+
+.footer-section ul li {
+    margin-bottom: 10px;
+}
+
+.footer-section a {
+    color: var(--light);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-section a:hover {
+    color: var(--gold);
+}
+
+.social-links {
+    display: flex;
+    gap: 15px;
+    margin-top: 15px;
+}
+
+.social-links a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    background-color: var(--gold);
+    color: var(--dark);
+    border-radius: 50%;
+    font-size: 18px;
+    transition: transform 0.3s ease;
+}
+
+.social-links a:hover {
+    transform: scale(1.1);
+    color: var(--dark);
+}
+
+.footer-bottom {
+    text-align: center;
+    border-top: 1px solid rgba(212, 175, 55, 0.3);
+    margin-top: 30px;
+    padding-top: 20px;
+    color: #999;
+}
+
+/* Mobile responsive: side menu and hamburger */
+.menu-toggle {
+    display: none;
+    background: transparent;
+    border: none;
+    color: var(--gold);
+    font-size: 1.4rem;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    .menu-toggle { display: block; }
+    .nav-links {
+        position: fixed;
+        top: 0;
+        right: 0;
+        height: 100vh;
+        width: 260px;
+        background-color: var(--dark);
+        flex-direction: column;
+        align-items: flex-start;
+        padding-top: 4.5rem;
+        padding-left: 0;
+        transform: translateX(100%);
+        transition: transform 0.3s ease;
+        gap: 0;
+        z-index: 1050;
+    }
+    .nav-links li { width: 100%; margin: 0; }
+    .nav-links a { display: block; width: 100%; padding: 18px 24px; border-bottom: 1px solid rgba(255,255,255,0.04); }
+    body.menu-open .nav-links { transform: translateX(0); }
+    .navbar { padding: 0.8rem 5%; }
+    .logo h2 { font-size: 1.1rem; }
+    .masonry-grid {
+        column-count: 2;
+    }
+}
+
+@media (max-width: 420px) {
+    .nav-links { width: 220px; }
+    .masonry-grid {
+        column-count: 1;
+    }
+}
+
+/* Lightbox styles */
+.lightbox {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0,0,0,0.85);
+    display: none;
+    align-items: center;
+    justify-content: center;
+    z-index: 2000;
+}
+.lightbox.visible {
+    display: flex;
+}
+.lightbox .lightbox-img {
+    max-width: 90%;
+    max-height: 90%;
+    border-radius: 8px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.5);
+}
+.lightbox .close {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    font-size: 3rem;
+    color: #fff;
+    cursor: pointer;
+}
+.lightbox .nav {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 3rem;
+    color: #fff;
+    padding: 0 20px;
+    cursor: pointer;
+    user-select: none;
+}
+.lightbox .prev { left: 20px; }
+.lightbox .next { right: 20px; }

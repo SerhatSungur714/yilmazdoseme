@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Yılmaz Döşeme galeri - 5000+ tamamlanan döşeme ve restorasyon projelerinden seçilmiş görkemli örnekler. Koltuk, kanepe, sandalye döşeme çalışmaları.">
+    <meta name="keywords" content="galeri, döşeme örnekleri, koltuk döşeme örnekleri, mobilya restorasyon, projeler, referanslar, yılmaz döşeme çalışmaları">
+    <meta name="author" content="Yılmaz Döşeme">
+    <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+    <link rel="canonical" href="https://yilmazdoseme.com/galeri.html">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Galeri - Yılmaz Döşeme">
+    <meta property="og:description" content="Projelerimizden görkemli örnekler. 5000+ başarılı döşeme ve restorasyon projesi.">
+    <meta property="og:url" content="https://yilmazdoseme.com/galeri.html">
+    <meta property="og:image" content="https://yilmazdoseme.com/images/gallery.png">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Galeri - Yılmaz Döşeme Projelerimiz">
+    <meta name="twitter:description" content="Yaptığımız işlerden seçme kareler ve başarılı projeler">
+    <title>Galeri - Yılmaz Döşeme | Döşeme Projeleri Ve Örnekleri</title>
+    <link rel="stylesheet" href="galeri.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "ImageGallery",
+      "name": "Yılmaz Döşeme Galeri",
+      "description": "Mobilya döşeme ve restorasyon projelerimizin görsel örneekleri",
+      "url": "https://yilmazdoseme.com/galeri.html",
+      "creator": {
+        "@type": "Organization",
+        "name": "Yılmaz Döşeme"
+      }
+    }
+    </script>
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="logo">
+            <a href="index.html"><img style="width: 200px;" src="img/logo.png" alt="Yılmaz Döşeme"></a>
+        </div>
+        <button class="menu-toggle" aria-label="Menü" aria-expanded="false"><i class="fas fa-bars"></i></button>
+        <ul class="nav-links">
+            <li><a href="index.html">Ana Menü</a></li>
+            <li><a href="hakkimizda.html">Hakkımızda</a></li>
+            <li><a href="hizmetlerimiz.html">Hizmetlerimiz</a></li>
+            <li><a href="galeri.html" class="active">Galeri</a></li>
+            <li><a href="iletisim.html">İletişim</a></li>
+        </ul>
+    </nav>
+
+    <div class="gallery-container">
+        <h1>Projelerimiz</h1>
+        <p class="subtitle">Yaptığımız işlerden kareler</p>
+        
+        <div class="tabs">
+            <h2 id="tabOther" class="tab active">Modellerimiz</h2>
+            <h2 id="tabCilali" class="tab">Cilalı Modeller</h2>
+        </div>
+        <div class="masonry-grid" id="galleryGrid">
+            <!-- görseller JavaScript ile eklenecek -->
+        </div>
+
+        <script>
+            // tab bar and rendering logic
+            const cilaliImages = [];
+            for (let i = 1; i <= 33; i++) cilaliImages.push(`cilalı${i}.jpeg`);
+
+            const otherImages = [
+                "foto2.jpeg",
+                "yilmaz-yeni1.jpeg",
+                "yilmaz-yeni2.jpeg",
+                "yilmaz-yeni3.jpeg",
+                "yilmaz-yeni4.jpeg",
+                "yilmaz-yeni5.jpeg",
+                "yilmaz-yeni6.jpeg",
+                "yilmaz-yeni7.jpeg",
+                "WhatsApp Image 2026-02-25 at 17.05.03.jpeg",
+                "WhatsApp Image 2026-02-25 at 17.05.04.jpeg",
+                "WhatsApp Image 2026-02-25 at 17.05.05 (1).jpeg",
+                "WhatsApp Image 2026-02-25 at 17.05.05.jpeg",
+                "WhatsApp Image 2026-02-25 at 17.05.08.jpeg",
+                "WhatsApp Image 2026-02-25 at 17.05.10 (1).jpeg",
+                "WhatsApp Image 2026-02-25 at 17.05.10 (2).jpeg",
+                "WhatsApp Image 2026-02-25 at 17.05.10.jpeg",
+                "WhatsApp Image 2026-02-25 at 17.05.11 (1).jpeg",
+                "WhatsApp Image 2026-02-25 at 17.05.11 (3).jpeg",
+                "WhatsApp Image 2026-02-25 at 17.05.11 (5).jpeg",
+                "WhatsApp Image 2026-02-25 at 17.05.11.jpeg",
+                "WhatsApp Image 2026-02-25 at 17.05.12 (1).jpeg",
+                "WhatsApp Image 2026-02-25 at 17.05.12 (2).jpeg",
+                "WhatsApp Image 2026-02-25 at 17.05.12 (3).jpeg",
+                "WhatsApp Image 2026-02-25 at 17.05.12 (4).jpeg",
+                "WhatsApp Image 2026-02-25 at 17.05.12 (5).jpeg",
+                "WhatsApp Image 2026-02-25 at 17.05.30 (1).jpeg",
+                "WhatsApp Image 2026-02-25 at 17.05.30 (2).jpeg",
+                "WhatsApp Image 2026-02-25 at 17.05.30 (4).jpeg",
+                "WhatsApp Image 2026-02-25 at 17.05.30 (5).jpeg",
+                "WhatsApp Image 2026-02-25 at 17.05.30.jpeg",
+                "WhatsApp Image 2026-02-25 at 17.05.31 (1).jpeg",
+                "WhatsApp Image 2026-02-25 at 17.05.31 (2).jpeg",
+                "WhatsApp Image 2026-02-25 at 17.05.31 (3).jpeg",
+                "WhatsApp Image 2026-02-25 at 17.18.24 (1).jpeg",
+                "WhatsApp Image 2026-02-25 at 17.18.24 (2).jpeg",
+                "WhatsApp Image 2026-02-25 at 17.18.24.jpeg",
+                "WhatsApp Image 2026-02-25 at 17.18.25 (1).jpeg",
+                "WhatsApp Image 2026-02-25 at 17.18.25 (2).jpeg",
+                "WhatsApp Image 2026-02-25 at 17.18.25 (3).jpeg",
+                "WhatsApp Image 2026-02-25 at 17.18.25.jpeg",
+                "WhatsApp Image 2026-02-25 at 17.18.26 (1).jpeg",
+                "WhatsApp Image 2026-02-25 at 17.18.26 (4).jpeg",
+                "WhatsApp Image 2026-02-25 at 17.18.26.jpeg",
+                "WhatsApp Image 2026-02-26 at 18.49.19.jpeg",
+                "WhatsApp Image 2026-02-28 at 15.18.16 (1).jpeg",
+                "WhatsApp Image 2026-02-28 at 15.18.16 (3).jpeg",
+                "WhatsApp Image 2026-02-28 at 15.18.16.jpeg",
+                "WhatsApp Image 2026-02-28 at 15.18.17 (1).jpeg",
+                "WhatsApp Image 2026-02-28 at 15.18.17 (2).jpeg",
+                "WhatsApp Image 2026-02-28 at 15.18.17 (3).jpeg",
+                "WhatsApp Image 2026-02-28 at 15.18.17.jpeg",
+                "WhatsApp Image 2026-02-28 at 15.18.19.jpeg",
+                "WhatsApp Image 2026-02-28 at 15.18.20 (1).jpeg",
+                "WhatsApp Image 2026-02-28 at 15.18.20 (2).jpeg",
+                "WhatsApp Image 2026-02-28 at 15.18.21 (2).jpeg",
+                "WhatsApp Image 2026-02-28 at 15.18.22 (1).jpeg",
+                "WhatsApp Image 2026-02-28 at 15.18.22 (2).jpeg",
+                "WhatsApp Image 2026-02-28 at 15.18.22 (3).jpeg",
+                "WhatsApp Image 2026-02-28 at 15.18.24 (2).jpeg",
+                "WhatsApp Image 2026-02-28 at 15.18.24.jpeg",
+                "WhatsApp Image 2026-02-28 at 15.18.25.jpeg"
+            ];
+
+            let currentImages = [];
+            const grid = document.getElementById('galleryGrid');
+            const tabC = document.getElementById('tabCilali');
+            const tabO = document.getElementById('tabOther');
+
+            function render(images) {
+                currentImages = images.slice();
+                grid.innerHTML = '';
+                images.forEach((name,idx) => {
+                    const item = document.createElement('div');
+                    item.className = 'gallery-item';
+                    const img = document.createElement('img');
+                    img.src = `img/${name}`;
+                    img.alt = 'Yılmaz Döşeme proje görseli';
+                    img.dataset.index = idx;
+                    item.appendChild(img);
+                    grid.appendChild(item);
+                });
+            }
+
+            function setActive(tab) {
+                tabC.classList.remove('active');
+                tabO.classList.remove('active');
+                tab.classList.add('active');
+            }
+
+            tabC.addEventListener('click', () => { setActive(tabC); render(cilaliImages); });
+            tabO.addEventListener('click', () => { setActive(tabO); render(otherImages); });
+
+            // lightbox
+            const lightbox = document.createElement('div');
+            lightbox.className = 'lightbox';
+            lightbox.innerHTML = `<span class="close">&times;</span><img class="lightbox-img" src="" alt=""><div class="nav prev">&#10094;</div><div class="nav next">&#10095;</div>`;
+            document.body.appendChild(lightbox);
+            const lbImg = lightbox.querySelector('.lightbox-img');
+            let currentIndex = 0;
+            function showLightbox(i) { currentIndex = i; lbImg.src = `img/${currentImages[i]}`; lightbox.classList.add('visible'); }
+            function hideLightbox() { lightbox.classList.remove('visible'); }
+            function changeImage(delta) { currentIndex = (currentIndex + delta + currentImages.length) % currentImages.length; lbImg.src = `img/${currentImages[currentIndex]}`; }
+            grid.addEventListener('click', e => { if (e.target.tagName === 'IMG') showLightbox(parseInt(e.target.dataset.index)); });
+            lightbox.addEventListener('click', e => {
+                if (e.target.classList.contains('close') || e.target === lightbox) hideLightbox();
+                if (e.target.classList.contains('prev')) changeImage(-1);
+                if (e.target.classList.contains('next')) changeImage(1);
+            });
+
+            // initial view
+            setActive(tabO);
+            render(otherImages);
+        </script>
+    </div>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Yılmaz Döşeme</h3>
+                <p>Profesyonel döşeme ve mobilya restorasyon hizmetleri sunuyoruz.</p>
+                <div class="social-links">
+                    <a href="#" title="Facebook"><i class="fab fa-facebook"></i></a>
+                    <a href="#" title="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="#" title="Twitter"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h3>Hızlı Linkler</h3>
+                <ul>
+                    <li><a href="index.html">Ana Sayfa</a></li>
+                    <li><a href="hakkimizda.html">Hakkımızda</a></li>
+                    <li><a href="hizmetlerimiz.html">Hizmetlerimiz</a></li>
+                    <li><a href="galeri.html">Galeri</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>İletişim</h3>
+                <p><strong>Adres:</strong> Gültepe Mah. Sevgi Sk. Sevgi Apt. No: 5, Küçükçekmece / İstanbul</p>
+                <p><strong>Telefon:</strong> (gsm) 0 212 599 93 75 | 0532 705 89 18 | 0532 598 29 57</p>
+                <p><strong>Email:</strong> info@yilmazdoseme.com</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Yılmaz Döşeme. Tüm hakları saklıdır.</p>
+        </div>
+    </footer>
+
+    <script>
+    document.addEventListener('DOMContentLoaded', function(){
+        var btn = document.querySelector('.menu-toggle');
+        var body = document.body;
+        btn && btn.addEventListener('click', function(e){
+            var expanded = this.getAttribute('aria-expanded') === 'true';
+            this.setAttribute('aria-expanded', String(!expanded));
+            body.classList.toggle('menu-open');
+        });
+        document.addEventListener('click', function(e){
+            if (!e.target.closest('.navbar')) {
+                body.classList.remove('menu-open');
+                var b = document.querySelector('.menu-toggle');
+                b && b.setAttribute('aria-expanded','false');
+            }
+        });
+    });
+    </script>
+
+    <!-- floating contact button -->
+    <div class="fixed-contact" id="fixedContact">
+      <button class="contact-main" id="contactToggle" aria-label="İletişime Geç">
+        <i class="fab fa-whatsapp"></i>
+      </button>
+      <div class="contact-options" id="contactOptions">
+        <a href="tel:+902125999375"><i class="fas fa-phone"></i> Bizi arayın</a>
+        <a href="https://wa.me/905327058918" target="_blank"><i class="fab fa-whatsapp"></i> WhatsApp Rufan Yılmaz</a>
+        <a href="https://wa.me/905325982957" target="_blank"><i class="fab fa-whatsapp"></i> WhatsApp Rufi Yılmaz</a>
+      </div>
+    </div>
+    <script>
+      document.addEventListener('DOMContentLoaded', function(){
+        var contact = document.getElementById('fixedContact');
+        var toggle = document.getElementById('contactToggle');
+        toggle && toggle.addEventListener('click', function(){
+          contact.classList.toggle('open');
+        });
+        document.addEventListener('click', function(e){
+          if (!e.target.closest('#fixedContact')) {
+            contact.classList.remove('open');
+          }
+        });
+      });
+    </script>
+</body>
+</html>
