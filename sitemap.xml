@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+    
+    <!-- Ana Sayfa -->
+    <url>
+        <loc>https://yilmazdoseme.com/</loc>
+        <lastmod>2026-03-13</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>1.0</priority>
+        <image:image>
+            <image:loc>https://yilmazdoseme.com/img/logo.png</image:loc>
+            <image:title>Yılmaz Döşeme - Logo</image:title>
+        </image:image>
+    </url>
+    
+    <!-- Hakkımızda -->
+    <url>
+        <loc>https://yilmazdoseme.com/hakkimizda.html</loc>
+        <lastmod>2026-03-13</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+        <image:image>
+            <image:loc>https://yilmazdoseme.com/img/rufi%20y%C4%B1lmaz%20ve%20karde%C5%9Fi.jpg</image:loc>
+            <image:title>Rufi Yılmaz ve Kardeşi - Yılmaz Döşeme Kurucuları</image:title>
+        </image:image>
+    </url>
+    
+    <!-- Hizmetlerimiz -->
+    <url>
+        <loc>https://yilmazdoseme.com/hizmetlerimiz.html</loc>
+        <lastmod>2026-03-13</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.95</priority>
+        <image:image>
+            <image:loc>https://yilmazdoseme.com/img/cila%C4%9F%C4%B11.jpeg</image:loc>
+            <image:title>Mobilya Cilalama - Yılmaz Döşeme Hizmetleri</image:title>
+        </image:image>
+    </url>
+    
+    <!-- Galeri -->
+    <url>
+        <loc>https://yilmazdoseme.com/galeri.html</loc>
+        <lastmod>2026-03-13</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.85</priority>
+        <image:image>
+            <image:loc>https://yilmazdoseme.com/img/cila%C4%9F%C4%B11.jpeg</image:loc>
+            <image:title>Döşeme Projesi 1 - Yılmaz Döşeme</image:title>
+        </image:image>
+        <image:image>
+            <image:loc>https://yilmazdoseme.com/img/cila%C4%9F%C4%B12.jpeg</image:loc>
+            <image:title>Döşeme Projesi 2 - Yılmaz Döşeme</image:title>
+        </image:image>
+        <image:image>
+            <image:loc>https://yilmazdoseme.com/img/cila%C4%9F%C4%B13.jpeg</image:loc>
+            <image:title>Döşeme Projesi 3 - Yılmaz Döşeme</image:title>
+        </image:image>
+        <image:image>
+            <image:loc>https://yilmazdoseme.com/img/cila%C4%9F%C4%B14.jpeg</image:loc>
+            <image:title>Döşeme Projesi 4 - Yılmaz Döşeme</image:title>
+        </image:image>
+        <image:image>
+            <image:loc>https://yilmazdoseme.com/img/cila%C4%9F%C4%B15.jpeg</image:loc>
+            <image:title>Döşeme Projesi 5 - Yılmaz Döşeme</image:title>
+        </image:image>
+    </url>
+    
+    <!-- İletişim -->
+    <url>
+        <loc>https://yilmazdoseme.com/iletisim.html</loc>
+        <lastmod>2026-03-13</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+</urlset>
+        <loc>https://yilmazdoseme.com/iletisim.html</loc>
+        <lastmod>2024-02-27</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.9</priority>
+    </url>
+    
+</urlset>

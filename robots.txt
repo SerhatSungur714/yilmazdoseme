@@ -1,0 +1,38 @@
+User-agent: *
+Allow: /
+Disallow: /admin/
+Disallow: /private/
+Disallow: /static/temp/
+
+# CSS, JavaScript, Images
+Allow: *.css
+Allow: *.js
+Allow: *.png
+Allow: *.jpg
+Allow: *.jpeg
+Allow: *.gif
+Allow: *.webp
+
+# Crawl-delay for efficient crawling
+Crawl-delay: 1
+Request-rate: 30/60
+
+# Sitemap
+Sitemap: https://yilmazdoseme.com/sitemap.xml
+
+# Google Search Console
+User-agent: Googlebot
+Allow: /
+Crawl-delay: 0
+
+# Bing Webmaster Tools
+User-agent: Bingbot
+Allow: /
+Crawl-delay: 1
+
+# Block bad bots
+User-agent: MJ12bot
+Disallow: /
+
+User-agent: AhrefsBot
+Crawl-delay: 10

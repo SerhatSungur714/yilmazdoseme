@@ -1,0 +1,189 @@
+/* Temel Ayarlar (Standart) */
+* { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', sans-serif; }
+body { background-color: #f9f9f9; color: #333; }
+:root { --gold: #D4AF37; --dark: #222; --light: #fff; }
+
+/* Navbar */
+.navbar { background-color: var(--dark); display: flex; justify-content: space-between; align-items: center; padding: 1rem 5%; border-bottom: 2px solid var(--gold); }
+.logo h2 { color: var(--gold); }
+.nav-links { list-style: none; display: flex; }
+.nav-links li { margin-left: 20px; }
+.nav-links a { text-decoration: none; color: var(--light); transition: 0.3s; }
+.nav-links a:hover, .nav-links a.active { color: var(--gold); }
+
+/* HAKKIMIZDA ÖZEL */
+.about-section {
+    padding: 80px 5%;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 50px;
+}
+
+.about-image {
+    flex: 1;
+    min-width: 300px;
+}
+
+.about-image img {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 10px 10px 0px var(--gold); /* Resmin arkasındaki altın gölge */
+}
+
+.about-content {
+    flex: 1;
+    min-width: 300px;
+}
+
+.about-content h1 {
+    color: var(--dark);
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    border-left: 5px solid var(--gold);
+    padding-left: 15px;
+}
+
+.lead {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: var(--gold);
+    margin-bottom: 15px;
+}
+
+.about-content p {
+    line-height: 1.6;
+    margin-bottom: 15px;
+    color: #555;
+}
+
+.stats {
+    display: flex;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.stat-box {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-weight: bold;
+    color: var(--dark);
+}
+
+.stat-box i {
+    color: var(--gold);
+    font-size: 1.5rem;
+}
+
+footer { background-color: var(--dark); color: var(--light); margin-top: 80px; padding: 50px 5%; }
+
+.footer-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-section h3 {
+    color: var(--gold);
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+.footer-section ul {
+    list-style: none;
+}
+
+.footer-section ul li {
+    margin-bottom: 10px;
+}
+
+.footer-section a {
+    color: var(--light);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-section a:hover {
+    color: var(--gold);
+}
+
+.social-links {
+    display: flex;
+    gap: 15px;
+    margin-top: 15px;
+}
+
+.social-links a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    background-color: var(--gold);
+    color: var(--dark);
+    border-radius: 50%;
+    font-size: 18px;
+    transition: transform 0.3s ease;
+}
+
+.social-links a:hover {
+    transform: scale(1.1);
+    color: var(--dark);
+}
+
+.footer-bottom {
+    text-align: center;
+    border-top: 1px solid rgba(212, 175, 55, 0.3);
+    margin-top: 30px;
+    padding-top: 20px;
+    color: #999;
+}
+
+/* Mobil */
+@media (max-width: 768px) {
+    .container { flex-direction: column; }
+    .about-image img { box-shadow: 5px 5px 0px var(--gold); }
+    .menu-toggle { display: block; }
+    .nav-links {
+        position: fixed;
+        top: 0;
+        right: 0;
+        height: 100vh;
+        width: 260px;
+        background-color: var(--dark);
+        flex-direction: column;
+        align-items: flex-start;
+        padding-top: 4.5rem;
+        padding-left: 0;
+        transform: translateX(100%);
+        transition: transform 0.3s ease;
+        gap: 0;
+        z-index: 1050;
+    }
+    .nav-links li { width: 100%; margin: 0; }
+    .nav-links a { display: block; width: 100%; padding: 18px 24px; border-bottom: 1px solid rgba(255,255,255,0.04); }
+    body.menu-open .nav-links { transform: translateX(0); }
+    .navbar { padding: 0.8rem 5%; }
+    .logo  { font-size: 1.1rem; }
+}
+
+@media (max-width: 420px) {
+    .nav-links { width: 220px; }
+}
+
+/* Mobile responsive: side menu and hamburger */
+.menu-toggle {
+    display: none;
+    background: transparent;
+    border: none;
+    color: var(--gold);
+    font-size: 1.4rem;
+    cursor: pointer;
+}
